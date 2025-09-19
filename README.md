@@ -1,36 +1,38 @@
-Discount Calculator
-This Python program is designed to automatically calculate discounts on a customer's bill based on the total amount.
+# 💰 Discount Calculator
 
-Project Goal
-This project is a simple exercise to help beginners understand and implement conditional logic using if, elif, and else statements in Python.
+### Project Overview
+This is a simple Python program to calculate discounts on a bill. It is a beginner-friendly exercise designed to demonstrate the effective use of **conditional statements** (`if`, `elif`, and `else`) in Python. The program simulates a basic tiered discount system for a retail store.
 
-Features
-User Input: The program prompts the user to enter the total bill amount.
+### ✨ Features
+* **User-Friendly Input:** Prompts the user to enter the total bill amount.
+* **Tiered Discounts:** Applies different discount rates based on the total bill amount.
+* **Clear Output:** Displays the calculated discount amount and the final price with precise formatting.
 
-Conditional Discounts:
-If the bill amount is greater than 1000 TK, a 20% discount is applied.
-If the bill amount is greater than 500 TK (but not greater than 1000 TK), a 10% discount is applied.
-Otherwise, no discount is applied.
+### ⚖️ Discount Policy
+| Bill Amount Range | Discount Applied |
+| :--- | :--- |
+| > ৳1000 | 20% |
+| > ৳500 | 10% |
+| ≤ ৳500 | No Discount |
 
-Output: The program prints the final discounted bill amount and the discount amount.
-How to Run It
-Make sure you have Python installed on your computer.
-Save the code as discount_calculator.py.
-Open your terminal or command prompt.
-Navigate to the directory where you saved the file.
-Run the program using the following command:
-python discount_calculator.py
-Follow the on-screen prompts to enter the bill amount.
+### 🚀 How to Run
+1.  Save the code as a Python file (e.g., `discount_calculator.py`).
+2.  Open your terminal or command prompt.
+3.  Navigate to the directory where you saved the file.
+4.  Run the program using the following command:
+    ```bash
+    python discount_calculator.py
+    ```
 
-Examples
-Enter customer bill amount: 1200
-Discount Amount: 240.00 taka
-Final Bill: 960.00 taka
+### 📜 Example Usage
+* **Bill over ৳1000:**
+    *Input:* `1250`
+    *Output:* `Final Bill: 1000.00 taka`
 
-Enter customer bill amount: 750
-Discount Amount: 75.00 taka
-Final Bill: 675.00 taka
+* **Bill between ৳501 and ৳1000:**
+    *Input:* `780`
+    *Output:* `Final Bill: 702.00 taka`
 
-Enter customer bill amount: 400
-No discount applicable.
-Final Bill: 400.00 taka
+* **Bill ৳500 or less:**
+    *Input:* `450`
+    *Output:* `Final Bill: 450.00 taka`
